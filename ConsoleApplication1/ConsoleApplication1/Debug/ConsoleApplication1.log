@@ -1,0 +1,73 @@
+﻿Build started 24.3.2015 9:03:31.
+     1>Project "C:\Users\ttv14saleksil\Documents\GitHub\Koulutehtavat\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printera.h(4): error C2011: 'Printer' : 'class' type redefinition
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(8): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(8): error C2079: 'Impl' uses undefined class 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(9): error C2143: syntax error : missing '}' before 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(9): error C2143: syntax error : missing ';' before 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(9): error C2059: syntax error : 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(11): error C2059: syntax error : '}'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(11): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(13): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(13): error C2059: syntax error : ')'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(14): error C2061: syntax error : identifier 'Impl'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(15): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(15): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(19): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(19): error C2059: syntax error : ')'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(20): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(20): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(25): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(27): error C2227: left of '->_number' must point to class/struct/union/generic type
+                 type is 'int'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(27): error C3861: 'printMessage': identifier not found
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(8): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(8): error C2079: 'Impl' uses undefined class 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(8): error C2374: 'Impl' : redefinition; multiple initialization
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(8) : see declaration of 'Impl'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(9): error C2143: syntax error : missing '}' before 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(9): error C2143: syntax error : missing ';' before 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(9): error C2059: syntax error : 'public'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(10): error C2086: 'int _number' : redefinition
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(10) : see declaration of '_number'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(11): error C2059: syntax error : '}'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(11): error C2143: syntax error : missing ';' before '}'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(13): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(13): error C2059: syntax error : ')'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(14): error C2061: syntax error : identifier 'Impl'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(14): error C2374: '_impl' : redefinition; multiple initialization
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(14) : see declaration of '_impl'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(15): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(15): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(19): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(19): error C2059: syntax error : ')'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(20): error C2143: syntax error : missing ';' before '{'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(20): error C2447: '{' : missing function header (old-style formal list?)
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(25): error C2027: use of undefined type 'Printer'
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\printer.h(4) : see declaration of 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(26): error C2084: function 'void print(void)' already has a body
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platforma.h(25) : see previous definition of 'print'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(27): error C2227: left of '->_number' must point to class/struct/union/generic type
+                 type is 'int'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\platformb.h(27): error C3861: 'coutMessage': identifier not found
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\main.cpp(12): error C2079: 'p' uses undefined class 'Printer'
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\consoleapplication1\consoleapplication1\main.cpp(13): error C2228: left of '.print' must have class/struct/union
+                 type is 'int'
+     1>Done Building Project "C:\Users\ttv14saleksil\Documents\GitHub\Koulutehtavat\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.20
