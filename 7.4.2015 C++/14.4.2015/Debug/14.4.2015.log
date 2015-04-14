@@ -1,0 +1,16 @@
+﻿Build started 14.4.2015 13:57:35.
+     1>Project "C:\Users\ttv14saleksil\Documents\GitHub\Koulutehtavat\7.4.2015 C++\14.4.2015\14.4.2015.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\ttv14saleksil\documents\github\koulutehtavat\7.4.2015 c++\14.4.2015\omavektori.h(64): error C2244: 'OmaVektori<tyyppi>::lisaa' : unable to match function definition to an existing declaration
+                 c:\users\ttv14saleksil\documents\github\koulutehtavat\7.4.2015 c++\14.4.2015\omavektori.h(13) : see declaration of 'OmaVektori<tyyppi>::lisaa'
+                 definition
+                 'tyyppi OmaVektori<tyyppi>::lisaa(tyyppi)'
+                 existing declarations
+                 'void OmaVektori<tyyppi>::lisaa(tyyppi)'
+     1>Done Building Project "C:\Users\ttv14saleksil\Documents\GitHub\Koulutehtavat\7.4.2015 C++\14.4.2015\14.4.2015.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.28
