@@ -14,6 +14,8 @@ int main()
 	vektori.lisaa(40);
 	vektori.lisaa(50);
 	vektori.lisaa(60);
+	vektori.lisaa(27);
+	vektori.lisaa(11);
 
 	vektori.tulosta();
 
@@ -22,7 +24,7 @@ int main()
 	//vektori.pop();
 	//vektori.pop();
 
-	vektori.tulosta();
+	//vektori.tulosta();
 	
 	system("PAUSE");
 	return 0;

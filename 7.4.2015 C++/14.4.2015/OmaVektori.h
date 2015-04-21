@@ -8,7 +8,7 @@ public:
 	// Konstruktori, parametrina maksimikoko
 	OmaVektori();
 	// Destruktori
-	~OmaVektori(void);
+	~OmaVektori(void) { delete[] taulukko; }
 
 	void lisaa(tyyppi uusiAlkio);
 	void poista(int indeksi);
@@ -32,19 +32,19 @@ template< typename tyyppi > OmaVektori< tyyppi >::OmaVektori()
 	taulukko = new tyyppi[maxKoko];
 }
 
-template< typename tyyppi > tyyppi OmaVektori <tyyppi>::lisaa(tyyppi alkio)
+template< typename tyyppi > void OmaVektori <tyyppi>::lisaa(tyyppi uusiAlkio)
 {
 	if (koko == maxKoko)
 	{
 
 		// Tehd‰‰n v‰liaikainen osoitin
 		// vanhaan taulukkoon 
-		int *temp = taulukko;
+		tyyppi *temp = taulukko;
 
 		// Kasvatetaan maksimikokoa
 		// ja luodaan uusi taulukko
 		maxKoko += 5;
-		taulukko = new int[maxKoko];
+		taulukko = new tyyppi[maxKoko];
 
 		// Kopioidaan vanhan taulukon
 		// numerot uuteen taulukkoon
@@ -57,7 +57,7 @@ template< typename tyyppi > tyyppi OmaVektori <tyyppi>::lisaa(tyyppi alkio)
 		delete[] temp;
 	}
 	
-	taulukko[koko] = alkio;
+	taulukko[koko] = uusiAlkio;
 	koko += 1;
 	
 
