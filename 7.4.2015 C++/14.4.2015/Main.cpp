@@ -17,7 +17,30 @@ int main()
 	vektori.lisaa(27);
 	vektori.lisaa(11);
 
-	vektori.tulosta();
+
+	pino.push(10);
+	pino.push(20);
+	pino.tulosta();
+	
+	try
+	{
+		pino.pop();
+		pino.pop();
+		pino.pop();
+
+		/*pino.push(30);
+		pino.push(40);
+		pino.push(50);
+		pino.push(60);
+		pino.push(70);*/
+	}
+
+	catch (const char *s)
+	{
+		std::cout << "pookkeus" << s << std::endl;
+	}
+
+	//vektori.tulosta();
 
 	
 

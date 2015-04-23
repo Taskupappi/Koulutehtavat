@@ -3,7 +3,7 @@
 
 int main()
 {
-	Jono<float> jono(12);
+	OmaJono<float> jono(12);
 	//OmaVektori<float> vektori;
 
 	jono.push(10);
@@ -15,7 +15,9 @@ int main()
 	jono.push(50);
 	jono.push(60);
 	jono.push(70);
-
+	jono.push(80);
+	jono.push(90);
+	jono.push(100);
 
 	jono.tulosta();
 
@@ -36,3 +38,7 @@ int main()
 	system("PAUSE");
 	return 0;
 }
+
+
+
+

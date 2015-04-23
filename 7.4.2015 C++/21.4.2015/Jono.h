@@ -1,89 +1,77 @@
-#ifndef JONO_H
-#define JONO_H
+#ifndef OMAJONO_H
+#define OMAJONO_H
 
-template <typename tyyppi> class Jono
+#include <iostream>
+
+
+template< typename tyyppi>
+class OmaJono
 {
 public:
-	Jono(int koko);
-	~Jono(void) { delete[] taulukko; }
+	// Konstruktori. Luodaan taulukko, jonka koko on maxKoko
+	OmaJono(int k) : maxKoko(k), koko(-1) { jonoTaulu = new tyyppi[maxKoko]; }
 
+	// Destruktori. Vapautetaan dynaamisen taulukolle varattu tila
+	~OmaJono(void) { delete[] jonoTaulu; }
+
+	// Lis‰‰ alkion jonon viimeiseksi
 	void push(tyyppi alkio);
+	// Palauttaa jonon ensimm‰isen alkion ja poistaa sen jonosta
 	tyyppi pop();
 	void tulosta();
 
 private:
-	int maxKoko;
-	int top;
-	tyyppi *taulukko;
-	int koko;
+	// koko = nykyinen koko
+	// maxKoko = alkioiden maksimim‰‰r‰
+	int koko, maxKoko;
+	// osoitin taulukkoon
+	tyyppi *jonoTaulu;
 };
 
-template <typename tyyppi> Jono <tyyppi>::Jono(int koko)
-{
-	maxKoko = koko;
-	top = -1;
-	taulukko = new tyyppi[koko];
-}
 
-template<typename tyyppi> void Jono<tyyppi>::push(tyyppi alkio)
-{
-	//if (top != (maxKoko - 1))
-	//{
-	//	taulukko[++top] = alkio;
-	//}
-
-	if (koko == maxKoko)
-	{
-
-		// Tehd‰‰n v‰liaikainen osoitin
-		// vanhaan taulukkoon 
-		tyyppi *temp = taulukko;
-
-		// Kasvatetaan maksimikokoa
-		// ja luodaan uusi taulukko
-		maxKoko += 5;
-		taulukko = new tyyppi[maxKoko];
-
-		// Kopioidaan vanhan taulukon
-		// numerot uuteen taulukkoon
-		for (int i = 0; i < koko; i++)
-		{
-			taulukko[i] = temp[i];
-		}
-
-		// Vapautetaan vanhan taulukon tila
-		delete[] temp;
-
-		
-
-	}
-
-	taulukko[koko] = alkio;
-	koko += 1;
-	top++;
-
-}
-template <typename tyyppi> tyyppi Jono < tyyppi > ::pop()
+template< typename tyyppi>
+tyyppi OmaJono< tyyppi>::pop()
 {
 	tyyppi alkio;
 
-	
-
-	if (top != -1)
+	if (koko != -1)
 	{
-		alkio = taulukko[top--];
+		alkio = jonoTaulu[0];
+
+		// Brute force...
+		// Hienostuneempi tapa olisi pit‰‰ 
+		// muistissa jonon alku ja loppu
+		// ja tehd‰ kopiointi taulukon alkuun
+		// vain tarvittaessa
+		for (int i = 0; i < koko; i++)
+		{
+			jonoTaulu[i] = jonoTaulu[i + 1];
+		}
+		koko--;
 	}
+
 	return alkio;
 }
 
-template <typename tyyppi> void Jono <tyyppi>::tulosta()
+
+template< typename tyyppi>
+void OmaJono< tyyppi>::push(tyyppi alkio)
 {
-	for (int i = 0; i < koko; i++)
+	if (koko <= (maxKoko - 1))
 	{
-		std::cout << taulukko[i] << " ";
+		jonoTaulu[++koko] = alkio;
+	}
+}
+
+template <typename tyyppi> void OmaJono <tyyppi>::tulosta()
+{
+	for (int i = 0; i < maxKoko; i++)
+	{
+		std::cout << jonoTaulu[i] << " ";
 	}
 
 	std::cout << std::endl;
 }
+
 
 #endif

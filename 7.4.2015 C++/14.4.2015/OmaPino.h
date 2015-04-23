@@ -1,6 +1,6 @@
 #ifndef  OMAPINO_H
 #define OMAPINO_H
-
+#include "Poikkeus.h"
 
 
 
@@ -15,6 +15,7 @@ public:
 
 	void push(tyyppi alkio);
 	tyyppi pop();
+	void tulosta();
 
 private:
 	int max;
@@ -35,6 +36,10 @@ template< typename tyyppi > void OmaPino< tyyppi >::push(tyyppi alkio)
 	{
 		pinoTaulu[++top] = alkio;
 	}
+	else if (top == (max - 1))
+	{
+		throw(" Ee voe laettaa");
+	}
 }
 template< typename tyyppi > tyyppi OmaPino< tyyppi >::pop()
 {
@@ -44,7 +49,21 @@ template< typename tyyppi > tyyppi OmaPino< tyyppi >::pop()
 	{
 		alkio = pinoTaulu[top--];
 	}
+	else if (top == -1)
+	{
+		throw (" Ee voe poestaa");
+	}
+
 	return alkio;
+}
+template <typename tyyppi> void OmaPino <tyyppi>::tulosta()
+{
+	for (int i = 0; i < max; i++)
+	{
+		std::cout << pinoTaulu[i] << " ";
+	}
+
+	std::cout << std::endl;
 }
 
 

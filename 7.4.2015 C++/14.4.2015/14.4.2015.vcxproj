@@ -70,6 +70,7 @@
   <ItemGroup>
     <ClInclude Include="OmaPino.h" />
     <ClInclude Include="OmaVektori.h" />
+    <ClInclude Include="Poikkeus.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
